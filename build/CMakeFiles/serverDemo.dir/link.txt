@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -O0 -Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-but-set-variable -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-private-field -rdynamic CMakeFiles/serverDemo.dir/serverDemo.cpp.o -o serverDemo  -lpthread
