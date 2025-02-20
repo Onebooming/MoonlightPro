@@ -72,10 +72,24 @@ include CMakeFiles/clientDemo1.dir/flags.make
 CMakeFiles/clientDemo1.dir/codegen:
 .PHONY : CMakeFiles/clientDemo1.dir/codegen
 
+CMakeFiles/clientDemo1.dir/src/message.cpp.o: CMakeFiles/clientDemo1.dir/flags.make
+CMakeFiles/clientDemo1.dir/src/message.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp
+CMakeFiles/clientDemo1.dir/src/message.cpp.o: CMakeFiles/clientDemo1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clientDemo1.dir/src/message.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clientDemo1.dir/src/message.cpp.o -MF CMakeFiles/clientDemo1.dir/src/message.cpp.o.d -o CMakeFiles/clientDemo1.dir/src/message.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp
+
+CMakeFiles/clientDemo1.dir/src/message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clientDemo1.dir/src/message.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp > CMakeFiles/clientDemo1.dir/src/message.cpp.i
+
+CMakeFiles/clientDemo1.dir/src/message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clientDemo1.dir/src/message.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp -o CMakeFiles/clientDemo1.dir/src/message.cpp.s
+
 CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o: CMakeFiles/clientDemo1.dir/flags.make
 CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/mnsocket.cpp
 CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o: CMakeFiles/clientDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o -MF CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o.d -o CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/mnsocket.cpp
 
 CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.s: cmake_force
 CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o: CMakeFiles/clientDemo1.dir/flags.make
 CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/client/mnclientsocket.cpp
 CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o: CMakeFiles/clientDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o -MF CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o.d -o CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/client/mnclientsocket.cpp
 
 CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.s: cmake_force
 CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o: CMakeFiles/clientDemo1.dir/flags.make
 CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/client/clientdemo1.cpp
 CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o: CMakeFiles/clientDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o -MF CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o.d -o CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/client/clientdemo1.cpp
 
 CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.i: cmake_force
@@ -116,6 +130,7 @@ CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.s: cmake_force
 
 # Object files for target clientDemo1
 clientDemo1_OBJECTS = \
+"CMakeFiles/clientDemo1.dir/src/message.cpp.o" \
 "CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o" \
 "CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o" \
 "CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o"
@@ -123,12 +138,13 @@ clientDemo1_OBJECTS = \
 # External object files for target clientDemo1
 clientDemo1_EXTERNAL_OBJECTS =
 
+clientDemo1: CMakeFiles/clientDemo1.dir/src/message.cpp.o
 clientDemo1: CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o
 clientDemo1: CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o
 clientDemo1: CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o
 clientDemo1: CMakeFiles/clientDemo1.dir/build.make
 clientDemo1: CMakeFiles/clientDemo1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable clientDemo1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable clientDemo1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clientDemo1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

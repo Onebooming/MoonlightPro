@@ -72,10 +72,24 @@ include CMakeFiles/serverDemo1.dir/flags.make
 CMakeFiles/serverDemo1.dir/codegen:
 .PHONY : CMakeFiles/serverDemo1.dir/codegen
 
+CMakeFiles/serverDemo1.dir/src/message.cpp.o: CMakeFiles/serverDemo1.dir/flags.make
+CMakeFiles/serverDemo1.dir/src/message.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp
+CMakeFiles/serverDemo1.dir/src/message.cpp.o: CMakeFiles/serverDemo1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/serverDemo1.dir/src/message.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serverDemo1.dir/src/message.cpp.o -MF CMakeFiles/serverDemo1.dir/src/message.cpp.o.d -o CMakeFiles/serverDemo1.dir/src/message.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp
+
+CMakeFiles/serverDemo1.dir/src/message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/serverDemo1.dir/src/message.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp > CMakeFiles/serverDemo1.dir/src/message.cpp.i
+
+CMakeFiles/serverDemo1.dir/src/message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/serverDemo1.dir/src/message.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp -o CMakeFiles/serverDemo1.dir/src/message.cpp.s
+
 CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o: CMakeFiles/serverDemo1.dir/flags.make
 CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/mnepoll.cpp
 CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o: CMakeFiles/serverDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o -MF CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o.d -o CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/mnepoll.cpp
 
 CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.s: cmake_force
 CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o: CMakeFiles/serverDemo1.dir/flags.make
 CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/mnthreadpool.cpp
 CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o: CMakeFiles/serverDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o -MF CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o.d -o CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/mnthreadpool.cpp
 
 CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.s: cmake_force
 CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o: CMakeFiles/serverDemo1.dir/flags.make
 CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/mnsocket.cpp
 CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o: CMakeFiles/serverDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o -MF CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o.d -o CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/mnsocket.cpp
 
 CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.s: cmake_force
 CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o: CMakeFiles/serverDemo1.dir/flags.make
 CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/server/mnserversocket.cpp
 CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o: CMakeFiles/serverDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o -MF CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o.d -o CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/server/mnserversocket.cpp
 
 CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.s: cmake_force
 CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o: CMakeFiles/serverDemo1.dir/flags.make
 CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o: /home/parallels/chenglei_work/2025/MoonLightPro/src/server/serverdemo1.cpp
 CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o: CMakeFiles/serverDemo1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o -MF CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o.d -o CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o -c /home/parallels/chenglei_work/2025/MoonLightPro/src/server/serverdemo1.cpp
 
 CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.i: cmake_force
@@ -144,6 +158,7 @@ CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.s: cmake_force
 
 # Object files for target serverDemo1
 serverDemo1_OBJECTS = \
+"CMakeFiles/serverDemo1.dir/src/message.cpp.o" \
 "CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o" \
 "CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o" \
 "CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o" \
@@ -153,6 +168,7 @@ serverDemo1_OBJECTS = \
 # External object files for target serverDemo1
 serverDemo1_EXTERNAL_OBJECTS =
 
+serverDemo1: CMakeFiles/serverDemo1.dir/src/message.cpp.o
 serverDemo1: CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o
 serverDemo1: CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o
 serverDemo1: CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o
@@ -160,7 +176,7 @@ serverDemo1: CMakeFiles/serverDemo1.dir/src/server/mnserversocket.cpp.o
 serverDemo1: CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o
 serverDemo1: CMakeFiles/serverDemo1.dir/build.make
 serverDemo1: CMakeFiles/serverDemo1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable serverDemo1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable serverDemo1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serverDemo1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

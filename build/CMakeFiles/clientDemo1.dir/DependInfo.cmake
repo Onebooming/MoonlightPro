@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/parallels/chenglei_work/2025/MoonLightPro/src/client/clientdemo1.cpp" "CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o" "gcc" "CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o.d"
   "/home/parallels/chenglei_work/2025/MoonLightPro/src/client/mnclientsocket.cpp" "CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o" "gcc" "CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o.d"
+  "/home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp" "CMakeFiles/clientDemo1.dir/src/message.cpp.o" "gcc" "CMakeFiles/clientDemo1.dir/src/message.cpp.o.d"
   "/home/parallels/chenglei_work/2025/MoonLightPro/src/mnsocket.cpp" "CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o" "gcc" "CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o.d"
   )
 

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/serverDemo1.dir/src/message.cpp.o"
+  "CMakeFiles/serverDemo1.dir/src/message.cpp.o.d"
   "CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o"
   "CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o.d"
   "CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o"

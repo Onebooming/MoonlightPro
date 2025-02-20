@@ -2,23 +2,31 @@
  * @Author: Onebooming 1026781822@qq.com
  * @Date: 2025-02-12 22:31:14
  * @LastEditors: Onebooming 1026781822@qq.com
- * @LastEditTime: 2025-02-17 21:48:31
+ * @LastEditTime: 2025-02-17 22:42:20
  * @FilePath: /MoonLightPro/src/client/clientdemo1.cpp
  * @Description: client demo1
  */
 #include "../../include/mnclientsocket.h"
+#include "../../include/message.h"
 #include <iostream>
 #include <vector>
 #include <thread>
 #include <cstdlib>
+
 
 void clientTask(int client_id) {
     try {
         MoonLight::ClientSocket client;
         client.connectToServer("127.0.0.1", 8080);
 
-        std::vector<uint8_t> data = { 'C', 'l', 'i', 'e', 'n', 't', ' ', 'I', 'D', ':', ' ', static_cast<uint8_t>(client_id) };
-        client.sendData(data);
+        // std::vector<uint8_t> data = { 'C', 'l', 'i', 'e', 'n', 't', ' ', 'I', 'D', ':', ' ', static_cast<uint8_t>(client_id) };
+
+        const char *strContent = "{\"name\":\"Onebooming\",\"age\":18}";
+        MoonLight::Message mes(1, MoonLight::Identifier::hello, MoonLight::DataType::json, strlen(strContent), strContent);
+        auto data = mes.serialize();
+        
+        std::vector<uint8_t> dataRef = *data;
+        client.sendData(dataRef);
         std::vector<uint8_t> response = client.receiveData();
 
         std::cout << "Response from server for client " << client_id << ": ";

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/parallels/chenglei_work/2025/MoonLightPro/src/message.cpp" "CMakeFiles/serverDemo1.dir/src/message.cpp.o" "gcc" "CMakeFiles/serverDemo1.dir/src/message.cpp.o.d"
   "/home/parallels/chenglei_work/2025/MoonLightPro/src/mnepoll.cpp" "CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o" "gcc" "CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.o.d"
   "/home/parallels/chenglei_work/2025/MoonLightPro/src/mnsocket.cpp" "CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o" "gcc" "CMakeFiles/serverDemo1.dir/src/mnsocket.cpp.o.d"
   "/home/parallels/chenglei_work/2025/MoonLightPro/src/mnthreadpool.cpp" "CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o" "gcc" "CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.o.d"

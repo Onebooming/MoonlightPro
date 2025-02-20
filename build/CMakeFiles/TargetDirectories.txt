@@ -1,5 +1,7 @@
 /home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/MoonLightPro.dir
 /home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/clientDemo1.dir
 /home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/serverDemo1.dir
+/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/httpclient.dir
+/home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/httpserver.dir
 /home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/edit_cache.dir
 /home/parallels/chenglei_work/2025/MoonLightPro/build/CMakeFiles/rebuild_cache.dir

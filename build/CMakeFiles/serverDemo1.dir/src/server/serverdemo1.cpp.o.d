@@ -191,9 +191,10 @@ CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o: \
  /usr/include/c++/10/bits/std_mutex.h \
  /usr/include/c++/10/bits/unique_lock.h \
  /usr/include/c++/10/condition_variable /usr/include/c++/10/functional \
- /usr/include/c++/10/bits/std_function.h /usr/include/c++/10/iostream \
- /usr/include/c++/10/ostream /usr/include/c++/10/ios \
- /usr/include/c++/10/bits/ios_base.h \
+ /usr/include/c++/10/bits/std_function.h \
+ /home/parallels/chenglei_work/2025/MoonLightPro/src/server/../../include/message.h \
+ /usr/include/c++/10/iostream /usr/include/c++/10/ostream \
+ /usr/include/c++/10/ios /usr/include/c++/10/bits/ios_base.h \
  /usr/include/c++/10/bits/locale_classes.h \
  /usr/include/c++/10/bits/locale_classes.tcc \
  /usr/include/c++/10/streambuf /usr/include/c++/10/bits/streambuf.tcc \
@@ -206,4 +207,7 @@ CMakeFiles/serverDemo1.dir/src/server/serverdemo1.cpp.o: \
  /usr/include/c++/10/bits/locale_facets.tcc \
  /usr/include/c++/10/bits/basic_ios.tcc \
  /usr/include/c++/10/bits/ostream.tcc /usr/include/c++/10/istream \
- /usr/include/c++/10/bits/istream.tcc
+ /usr/include/c++/10/bits/istream.tcc /usr/include/c++/10/algorithm \
+ /usr/include/c++/10/bits/stl_algo.h \
+ /usr/include/c++/10/bits/algorithmfwd.h \
+ /usr/include/c++/10/bits/uniform_int_dist.h

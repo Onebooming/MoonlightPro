@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/clientDemo1.dir/src/client/clientdemo1.cpp.o.d"
   "CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o"
   "CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.o.d"
+  "CMakeFiles/clientDemo1.dir/src/message.cpp.o"
+  "CMakeFiles/clientDemo1.dir/src/message.cpp.o.d"
   "CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o"
   "CMakeFiles/clientDemo1.dir/src/mnsocket.cpp.o.d"
   "clientDemo1"

@@ -155,6 +155,32 @@ serverDemo1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverDemo1.dir/build.make CMakeFiles/serverDemo1.dir/build
 .PHONY : serverDemo1/fast
 
+#=============================================================================
+# Target rules for targets named httpclient
+
+# Build rule for target.
+httpclient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpclient
+.PHONY : httpclient
+
+# fast build rule for target.
+httpclient/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/build
+.PHONY : httpclient/fast
+
+#=============================================================================
+# Target rules for targets named httpserver
+
+# Build rule for target.
+httpserver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver
+.PHONY : httpserver
+
+# fast build rule for target.
+httpserver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/build
+.PHONY : httpserver/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -251,6 +277,30 @@ src/client/mnclientsocket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clientDemo1.dir/build.make CMakeFiles/clientDemo1.dir/src/client/mnclientsocket.cpp.s
 .PHONY : src/client/mnclientsocket.cpp.s
 
+src/client/mnhttpclientdemo.o: src/client/mnhttpclientdemo.cpp.o
+.PHONY : src/client/mnhttpclientdemo.o
+
+# target to build an object file
+src/client/mnhttpclientdemo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/client/mnhttpclientdemo.cpp.o
+.PHONY : src/client/mnhttpclientdemo.cpp.o
+
+src/client/mnhttpclientdemo.i: src/client/mnhttpclientdemo.cpp.i
+.PHONY : src/client/mnhttpclientdemo.i
+
+# target to preprocess a source file
+src/client/mnhttpclientdemo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/client/mnhttpclientdemo.cpp.i
+.PHONY : src/client/mnhttpclientdemo.cpp.i
+
+src/client/mnhttpclientdemo.s: src/client/mnhttpclientdemo.cpp.s
+.PHONY : src/client/mnhttpclientdemo.s
+
+# target to generate assembly for a file
+src/client/mnhttpclientdemo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/client/mnhttpclientdemo.cpp.s
+.PHONY : src/client/mnhttpclientdemo.cpp.s
+
 src/hello.o: src/hello.cpp.o
 .PHONY : src/hello.o
 
@@ -275,12 +325,86 @@ src/hello.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoonLightPro.dir/build.make CMakeFiles/MoonLightPro.dir/src/hello.cpp.s
 .PHONY : src/hello.cpp.s
 
+src/http/app/app_admin_info.o: src/http/app/app_admin_info.cpp.o
+.PHONY : src/http/app/app_admin_info.o
+
+# target to build an object file
+src/http/app/app_admin_info.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/app/app_admin_info.cpp.o
+.PHONY : src/http/app/app_admin_info.cpp.o
+
+src/http/app/app_admin_info.i: src/http/app/app_admin_info.cpp.i
+.PHONY : src/http/app/app_admin_info.i
+
+# target to preprocess a source file
+src/http/app/app_admin_info.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/app/app_admin_info.cpp.i
+.PHONY : src/http/app/app_admin_info.cpp.i
+
+src/http/app/app_admin_info.s: src/http/app/app_admin_info.cpp.s
+.PHONY : src/http/app/app_admin_info.s
+
+# target to generate assembly for a file
+src/http/app/app_admin_info.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/app/app_admin_info.cpp.s
+.PHONY : src/http/app/app_admin_info.cpp.s
+
+src/http/app/app_hello.o: src/http/app/app_hello.cpp.o
+.PHONY : src/http/app/app_hello.o
+
+# target to build an object file
+src/http/app/app_hello.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/app/app_hello.cpp.o
+.PHONY : src/http/app/app_hello.cpp.o
+
+src/http/app/app_hello.i: src/http/app/app_hello.cpp.i
+.PHONY : src/http/app/app_hello.i
+
+# target to preprocess a source file
+src/http/app/app_hello.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/app/app_hello.cpp.i
+.PHONY : src/http/app/app_hello.cpp.i
+
+src/http/app/app_hello.s: src/http/app/app_hello.cpp.s
+.PHONY : src/http/app/app_hello.s
+
+# target to generate assembly for a file
+src/http/app/app_hello.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/app/app_hello.cpp.s
+.PHONY : src/http/app/app_hello.cpp.s
+
+src/http/core/mnhttpserver.o: src/http/core/mnhttpserver.cpp.o
+.PHONY : src/http/core/mnhttpserver.o
+
+# target to build an object file
+src/http/core/mnhttpserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/core/mnhttpserver.cpp.o
+.PHONY : src/http/core/mnhttpserver.cpp.o
+
+src/http/core/mnhttpserver.i: src/http/core/mnhttpserver.cpp.i
+.PHONY : src/http/core/mnhttpserver.i
+
+# target to preprocess a source file
+src/http/core/mnhttpserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/core/mnhttpserver.cpp.i
+.PHONY : src/http/core/mnhttpserver.cpp.i
+
+src/http/core/mnhttpserver.s: src/http/core/mnhttpserver.cpp.s
+.PHONY : src/http/core/mnhttpserver.s
+
+# target to generate assembly for a file
+src/http/core/mnhttpserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/http/core/mnhttpserver.cpp.s
+.PHONY : src/http/core/mnhttpserver.cpp.s
+
 src/message.o: src/message.cpp.o
 .PHONY : src/message.o
 
 # target to build an object file
 src/message.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoonLightPro.dir/build.make CMakeFiles/MoonLightPro.dir/src/message.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clientDemo1.dir/build.make CMakeFiles/clientDemo1.dir/src/message.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverDemo1.dir/build.make CMakeFiles/serverDemo1.dir/src/message.cpp.o
 .PHONY : src/message.cpp.o
 
 src/message.i: src/message.cpp.i
@@ -289,6 +413,8 @@ src/message.i: src/message.cpp.i
 # target to preprocess a source file
 src/message.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoonLightPro.dir/build.make CMakeFiles/MoonLightPro.dir/src/message.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clientDemo1.dir/build.make CMakeFiles/clientDemo1.dir/src/message.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverDemo1.dir/build.make CMakeFiles/serverDemo1.dir/src/message.cpp.i
 .PHONY : src/message.cpp.i
 
 src/message.s: src/message.cpp.s
@@ -297,6 +423,8 @@ src/message.s: src/message.cpp.s
 # target to generate assembly for a file
 src/message.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoonLightPro.dir/build.make CMakeFiles/MoonLightPro.dir/src/message.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clientDemo1.dir/build.make CMakeFiles/clientDemo1.dir/src/message.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverDemo1.dir/build.make CMakeFiles/serverDemo1.dir/src/message.cpp.s
 .PHONY : src/message.cpp.s
 
 src/mnepoll.o: src/mnepoll.cpp.o
@@ -322,6 +450,54 @@ src/mnepoll.s: src/mnepoll.cpp.s
 src/mnepoll.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverDemo1.dir/build.make CMakeFiles/serverDemo1.dir/src/mnepoll.cpp.s
 .PHONY : src/mnepoll.cpp.s
+
+src/mnjson.o: src/mnjson.cpp.o
+.PHONY : src/mnjson.o
+
+# target to build an object file
+src/mnjson.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/mnjson.cpp.o
+.PHONY : src/mnjson.cpp.o
+
+src/mnjson.i: src/mnjson.cpp.i
+.PHONY : src/mnjson.i
+
+# target to preprocess a source file
+src/mnjson.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/mnjson.cpp.i
+.PHONY : src/mnjson.cpp.i
+
+src/mnjson.s: src/mnjson.cpp.s
+.PHONY : src/mnjson.s
+
+# target to generate assembly for a file
+src/mnjson.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/mnjson.cpp.s
+.PHONY : src/mnjson.cpp.s
+
+src/mnlog.o: src/mnlog.cpp.o
+.PHONY : src/mnlog.o
+
+# target to build an object file
+src/mnlog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/mnlog.cpp.o
+.PHONY : src/mnlog.cpp.o
+
+src/mnlog.i: src/mnlog.cpp.i
+.PHONY : src/mnlog.i
+
+# target to preprocess a source file
+src/mnlog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/mnlog.cpp.i
+.PHONY : src/mnlog.cpp.i
+
+src/mnlog.s: src/mnlog.cpp.s
+.PHONY : src/mnlog.s
+
+# target to generate assembly for a file
+src/mnlog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/mnlog.cpp.s
+.PHONY : src/mnlog.cpp.s
 
 src/mnsocket.o: src/mnsocket.cpp.o
 .PHONY : src/mnsocket.o
@@ -373,6 +549,30 @@ src/mnthreadpool.s: src/mnthreadpool.cpp.s
 src/mnthreadpool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverDemo1.dir/build.make CMakeFiles/serverDemo1.dir/src/mnthreadpool.cpp.s
 .PHONY : src/mnthreadpool.cpp.s
+
+src/server/mnhttpserverdemo.o: src/server/mnhttpserverdemo.cpp.o
+.PHONY : src/server/mnhttpserverdemo.o
+
+# target to build an object file
+src/server/mnhttpserverdemo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/server/mnhttpserverdemo.cpp.o
+.PHONY : src/server/mnhttpserverdemo.cpp.o
+
+src/server/mnhttpserverdemo.i: src/server/mnhttpserverdemo.cpp.i
+.PHONY : src/server/mnhttpserverdemo.i
+
+# target to preprocess a source file
+src/server/mnhttpserverdemo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/server/mnhttpserverdemo.cpp.i
+.PHONY : src/server/mnhttpserverdemo.cpp.i
+
+src/server/mnhttpserverdemo.s: src/server/mnhttpserverdemo.cpp.s
+.PHONY : src/server/mnhttpserverdemo.s
+
+# target to generate assembly for a file
+src/server/mnhttpserverdemo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/server/mnhttpserverdemo.cpp.s
+.PHONY : src/server/mnhttpserverdemo.cpp.s
 
 src/server/mnserversocket.o: src/server/mnserversocket.cpp.o
 .PHONY : src/server/mnserversocket.o
@@ -432,6 +632,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... MoonLightPro"
 	@echo "... clientDemo1"
+	@echo "... httpclient"
+	@echo "... httpserver"
 	@echo "... serverDemo1"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -445,21 +647,42 @@ help:
 	@echo "... src/client/mnclientsocket.o"
 	@echo "... src/client/mnclientsocket.i"
 	@echo "... src/client/mnclientsocket.s"
+	@echo "... src/client/mnhttpclientdemo.o"
+	@echo "... src/client/mnhttpclientdemo.i"
+	@echo "... src/client/mnhttpclientdemo.s"
 	@echo "... src/hello.o"
 	@echo "... src/hello.i"
 	@echo "... src/hello.s"
+	@echo "... src/http/app/app_admin_info.o"
+	@echo "... src/http/app/app_admin_info.i"
+	@echo "... src/http/app/app_admin_info.s"
+	@echo "... src/http/app/app_hello.o"
+	@echo "... src/http/app/app_hello.i"
+	@echo "... src/http/app/app_hello.s"
+	@echo "... src/http/core/mnhttpserver.o"
+	@echo "... src/http/core/mnhttpserver.i"
+	@echo "... src/http/core/mnhttpserver.s"
 	@echo "... src/message.o"
 	@echo "... src/message.i"
 	@echo "... src/message.s"
 	@echo "... src/mnepoll.o"
 	@echo "... src/mnepoll.i"
 	@echo "... src/mnepoll.s"
+	@echo "... src/mnjson.o"
+	@echo "... src/mnjson.i"
+	@echo "... src/mnjson.s"
+	@echo "... src/mnlog.o"
+	@echo "... src/mnlog.i"
+	@echo "... src/mnlog.s"
 	@echo "... src/mnsocket.o"
 	@echo "... src/mnsocket.i"
 	@echo "... src/mnsocket.s"
 	@echo "... src/mnthreadpool.o"
 	@echo "... src/mnthreadpool.i"
 	@echo "... src/mnthreadpool.s"
+	@echo "... src/server/mnhttpserverdemo.o"
+	@echo "... src/server/mnhttpserverdemo.i"
+	@echo "... src/server/mnhttpserverdemo.s"
 	@echo "... src/server/mnserversocket.o"
 	@echo "... src/server/mnserversocket.i"
 	@echo "... src/server/mnserversocket.s"
