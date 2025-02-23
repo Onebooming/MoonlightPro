@@ -1,11 +1,12 @@
 #include "mnhttpserver.h"
-#include "../../include/mnlog.h"
+#include "../../../include/mnlog.h"
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
 #include <boost/beast/version.hpp>
 #include <boost/asio/ip/tcp.hpp>
 #include <boost/asio/ssl/stream.hpp>
 #include <boost/asio/strand.hpp>
+#include <boost/asio/dispatch.hpp> // Ensure dispatch is included
 #include <boost/config.hpp>
 #include <iostream>
 #include <memory>
@@ -14,36 +15,6 @@
 #include <vector>
 
 namespace MoonLight {
-
-MNHttpServer::MNHttpServer(boost::asio::io_context& ioc, boost::asio::ssl::context& ctx, int port)
-    : acceptor_(ioc), ctx_(ctx) {
-    boost::asio::ip::tcp::endpoint endpoint(boost::asio::ip::tcp::v4(), port);
-    acceptor_.open(endpoint.protocol());
-    acceptor_.set_option(boost::asio::socket_base::reuse_address(true));
-    acceptor_.bind(endpoint);
-    acceptor_.listen(boost::asio::socket_base::max_listen_connections);
-}
-
-void MNHttpServer::run() {
-    doAccept();
-}
-
-void MNHttpServer::addRoute(const std::string& path, std::function<void(boost::beast::http::request<boost::beast::http::string_body>, std::shared_ptr<void>)> handler) {
-    routes_[path] = handler;
-}
-
-void MNHttpServer::doAccept() {
-    acceptor_.async_accept(
-        boost::asio::make_strand(acceptor_.get_executor()),
-        boost::beast::bind_front_handler(&MNHttpServer::onAccept, this));
-}
-
-void MNHttpServer::onAccept(boost::beast::error_code ec, boost::asio::ip::tcp::socket socket) {
-    if (!ec) {
-        std::make_shared<Session>(std::move(socket), ctx_, routes_)->run();
-    }
-    doAccept();
-}
 
 class Session : public std::enable_shared_from_this<Session> {
 public:
@@ -126,10 +97,40 @@ public:
     }
 
 private:
-    boost::beast::ssl_stream<boost::beast::tcp_stream> stream_;
+    boost::asio::ssl::stream<boost::asio::ip::tcp::socket> stream_; // Corrected to use boost::asio::ssl::stream
     boost::beast::flat_buffer buffer_;
     boost::beast::http::request<boost::beast::http::string_body> req_;
     std::map<std::string, std::function<void(boost::beast::http::request<boost::beast::http::string_body>, std::shared_ptr<void>)>>& routes_;
 };
+
+MNHttpServer::MNHttpServer(boost::asio::io_context& ioc, boost::asio::ssl::context& ctx, int port)
+    : acceptor_(ioc), ctx_(ctx) {
+    boost::asio::ip::tcp::endpoint endpoint(boost::asio::ip::tcp::v4(), port);
+    acceptor_.open(endpoint.protocol());
+    acceptor_.set_option(boost::asio::socket_base::reuse_address(true));
+    acceptor_.bind(endpoint);
+    acceptor_.listen(boost::asio::socket_base::max_listen_connections);
+}
+
+void MNHttpServer::run() {
+    doAccept();
+}
+
+void MNHttpServer::addRoute(const std::string& path, std::function<void(boost::beast::http::request<boost::beast::http::string_body>, std::shared_ptr<void>)> handler) {
+    routes_[path] = handler;
+}
+
+void MNHttpServer::doAccept() {
+    acceptor_.async_accept(
+        boost::asio::make_strand(acceptor_.get_executor()),
+        boost::beast::bind_front_handler(&MNHttpServer::onAccept, this));
+}
+
+void MNHttpServer::onAccept(boost::beast::error_code ec, boost::asio::ip::tcp::socket socket) {
+    if (!ec) {
+        std::make_shared<Session>(std::move(socket), ctx_, routes_)->run();
+    }
+    doAccept();
+}
 
 } // namespace MoonLight

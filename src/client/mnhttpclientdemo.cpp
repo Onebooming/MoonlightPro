@@ -4,7 +4,7 @@
  * @LastEditors: Onebooming 1026781822@qq.com
  * @LastEditTime: 2025-02-20 22:43:21
  * @FilePath: /MoonLightPro/src/client/mnhttpclientdemo.cpp
- * @Description: htth client demo
+ * @Description: http client demo
  */
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
         boost::asio::io_context ioc;
         boost::asio::ip::tcp::resolver resolver(ioc);
         boost::asio::ssl::context ctx(boost::asio::ssl::context::tlsv12_client);
-        boost::beast::ssl_stream<boost::beast::tcp_stream> stream(ioc, ctx);
+        boost::asio::ssl::stream<boost::asio::ip::tcp::socket> stream(ioc, ctx);  // 使用 boost::asio::ssl::stream
 
         if (!SSL_set_tlsext_host_name(stream.native_handle(), host)) {
             boost::beast::error_code ec{static_cast<int>(::ERR_get_error()), boost::asio::error::get_ssl_category()};
