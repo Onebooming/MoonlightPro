@@ -10,7 +10,7 @@
 #define HTTP_APP_ADMIN_INFO_H
 
 #include "../core/mnhttpserver.h"
-#include "../../include/mnjson.h"
+#include "../../../include/mnjson.h"
 #include <string>
 
 namespace MoonLight {

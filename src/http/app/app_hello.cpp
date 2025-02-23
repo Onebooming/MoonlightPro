@@ -2,11 +2,12 @@
  * @Author: Onebooming 1026781822@qq.com
  * @Date: 2025-02-20 22:18:08
  * @LastEditors: Onebooming 1026781822@qq.com
- * @LastEditTime: 2025-02-20 22:32:14
+ * @LastEditTime: 2025-02-23 12:03:30
  * @FilePath: /MoonLightPro/src/http/app/app_hello.cpp
  * @Description: 请求处理url为 /moonlight/hello 的请求
  */
 #include "app_hello.h"
+#include "../core/mnhttpserver.h" // 包含Session类定义
 
 namespace MoonLight {
 
@@ -22,7 +23,7 @@ void HttpAppHello::handleRequest(boost::beast::http::request<boost::beast::http:
     res->body() = "hello world.";
     res->prepare_payload();
     boost::beast::http::async_write(static_cast<Session*>(session.get())->stream(), *res,
-                                    boost::beast::bind_front_handler(&Session::onWrite, session, res->need_eof()));
+                                    boost::beast::bind_front_handler(&Session::onWrite, static_cast<Session*>(session.get()), res->need_eof()));
 }
 
 } // namespace MoonLight

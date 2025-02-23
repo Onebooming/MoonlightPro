@@ -1228,4 +1228,21 @@ CMakeFiles/httpserver.dir/src/http/app/app_hello.cpp.o: \
  /usr/include/boost/asio/detail/strand_service.hpp \
  /usr/include/boost/asio/detail/impl/strand_service.hpp \
  /usr/include/boost/asio/detail/impl/strand_service.ipp \
- /usr/include/c++/10/iostream
+ /usr/include/boost/asio/ssl/stream.hpp \
+ /usr/include/boost/asio/ssl/detail/buffered_handshake_op.hpp \
+ /usr/include/boost/asio/ssl/detail/engine.hpp \
+ /usr/include/boost/asio/detail/static_mutex.hpp \
+ /usr/include/boost/asio/detail/posix_static_mutex.hpp \
+ /usr/include/boost/asio/ssl/stream_base.hpp \
+ /usr/include/boost/asio/ssl/detail/impl/engine.ipp \
+ /usr/include/boost/asio/ssl/detail/handshake_op.hpp \
+ /usr/include/boost/asio/ssl/detail/io.hpp \
+ /usr/include/boost/asio/ssl/detail/stream_core.hpp \
+ /usr/include/boost/asio/deadline_timer.hpp \
+ /usr/include/boost/asio/basic_deadline_timer.hpp \
+ /usr/include/boost/asio/ssl/detail/read_op.hpp \
+ /usr/include/boost/asio/ssl/detail/shutdown_op.hpp \
+ /usr/include/boost/asio/ssl/detail/write_op.hpp \
+ /usr/include/boost/asio/dispatch.hpp \
+ /usr/include/boost/asio/impl/dispatch.hpp /usr/include/c++/10/iostream \
+ /usr/include/c++/10/thread
