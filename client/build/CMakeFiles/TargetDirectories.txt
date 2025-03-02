@@ -1,0 +1,3 @@
+/home/parallels/chenglei_work/2025/MLP_pts/MoonlightPro/client/build/CMakeFiles/client_demo_1.dir
+/home/parallels/chenglei_work/2025/MLP_pts/MoonlightPro/client/build/CMakeFiles/edit_cache.dir
+/home/parallels/chenglei_work/2025/MLP_pts/MoonlightPro/client/build/CMakeFiles/rebuild_cache.dir
