@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package MoonLight;
+
+// 定义用户信息的数据结构
+message UserInfo {
+    string username = 1;
+    string name = 2;
+    string gender = 3;
+    int32 age = 4;
+    string nationality = 5;
+    string email = 6;
+    string password = 7;
+}

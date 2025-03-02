@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package MoonLight;
+
+// 定义注册请求的数据结构
+message RegisterRequest {
+    string username = 1;
+    string name = 2;
+    string gender = 3;
+    int32 age = 4;
+    string nationality = 5;
+    string email = 6;
+    string password = 7;
+}
+
+// 定义注册响应的数据结构
+message RegisterResponse {
+    bool success = 1;
+    string message = 2;
+}

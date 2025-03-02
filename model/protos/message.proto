@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package MoonLight;
+
+// 定义操作类型的枚举
+enum OperationType {
+    REGISTER = 0;
+    LOGIN = 1;
+    LOGOUT = 2;
+    GET = 3;
+    SET = 4;
+    DELETE = 5;
+    UPDATE = 6;
+    SUBSCRIPTION = 7;
+    RESPONSE = 8;
+}
+
+// 定义数据类型的枚举
+enum DataType {
+    USER_INFO = 0;
+    SESSION_INFO = 1;
+    OTHER = 2;
+}
+
+// 定义主消息结构
+message Message {
+    uint64 msg_id = 1;
+    string session_id = 2;
+    OperationType operation = 3;
+    DataType data_type = 4;
+    bytes data = 5; // 用于任意其他类型的数据
+}

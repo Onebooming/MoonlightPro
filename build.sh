@@ -1,5 +1,10 @@
 #!/bin/bash
 
+protoc --cpp_out=. ./model/protos/*.proto
+mkdir -p ./model/protc_cpps
+mv ./model/protos/*.pb.cc ./model/protc_cpps
+mv ./model/protos/*.pb.h ./model/protc_cpps
+
 # 编译server
 echo "Compiling server..."
 cd server || {
